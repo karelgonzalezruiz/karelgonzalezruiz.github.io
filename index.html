@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Portafolio de Karel González, estudiante de desarrollo de software enfocado en aplicaciones web, bases de datos y lógica backend."
+    >
+    <title>Karel González — Portafolio</title>
+
+    <link rel="canonical" href="https://karelgonzalezruiz.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Karel González — Portafolio">
+    <meta
+      property="og:description"
+      content="Portafolio de Karel González, estudiante de desarrollo de software enfocado en aplicaciones web, bases de datos y lógica backend."
+    >
+    <meta property="og:url" content="https://karelgonzalezruiz.github.io/">
+    <meta property="og:image" content="https://karelgonzalezruiz.github.io/img/logo-light.png">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="icon" type="image/png" href="img/logo-light.png">
+    <link rel="stylesheet" href="css/styles.css?v=20260621">
+  </head>
+  <body>
+    <script>
+      // Aplica el tema guardado antes de pintar para evitar el parpadeo (FOUC).
+      (function () {
+        var t = localStorage.getItem("theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        if (t === "dark") document.body.classList.add("dark-mode");
+      })();
+    </script>
+
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <button class="site-logo" type="button" aria-label="Karel González — volver al inicio">
+          <img class="logo-img logo-img--light" src="img/logo-light.png" alt="Avatar de Karel González" width="46" height="46">
+          <img class="logo-img logo-img--dark" src="img/logo-dark.png" alt="" width="46" height="46" aria-hidden="true">
+        </button>
+        <button class="theme-toggle" type="button" aria-label="Cambiar tema" aria-pressed="false">
+          <span class="theme-toggle__icon" aria-hidden="true"></span>
+          <span class="theme-toggle__text">Modo oscuro</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero reveal" aria-labelledby="hero-title">
+        <div class="wrap hero-inner">
+          <h1 id="hero-title">Karel González</h1>
+          <p class="hero-role">Estudiante de desarrollo de software</p>
+          <p class="hero-lead">
+            Este es mi portafolio. Aquí podrás ver mis proyectos, las tecnologías que manejo, mi
+            formación académica y mi CV, todo reunido en un mismo lugar.
+          </p>
+          <div class="actions">
+            <a class="btn btn--solid" href="https://mail.google.com/mail/?view=cm&fs=1&to=karelg2006@gmail.com&su=Contacto%20desde%20portafolio" target="_blank" rel="noreferrer">Escríbeme</a>
+            <a class="btn btn--ghost" href="https://github.com/karelgonzalezruiz" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section reveal" id="sobre-mi" aria-labelledby="about-title">
+        <div class="wrap narrow center">
+          <p class="kicker">Sobre mí</p>
+          <h2 id="about-title">Software práctico, estructura clara.</h2>
+          <p class="lead">
+            Soy un desarrollador de software al que le apasiona construir aplicaciones web prácticas y
+            bien pensadas. Me gusta entender el problema a fondo antes de teclear una sola línea de código,
+            y disfruto convertir ideas en sistemas que realmente aportan valor: con datos bien modelados,
+            una lógica backend ordenada e interfaces claras. Soy una persona muy detallista, por lo que me
+            aseguro de pulir cada aspecto del proyecto hasta garantizar que todo funcione exactamente como debe.
+          </p>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section reveal" id="habilidades" aria-labelledby="skills-title">
+        <div class="wrap narrow center">
+          <p class="kicker">Habilidades</p>
+          <h2 id="skills-title">Tecnologías usadas en proyectos reales.</h2>
+          <ul class="chips" aria-label="Habilidades técnicas">
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>PHP</li>
+            <li>Laravel</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Prolog</li>
+            <li>PostgreSQL</li>
+            <li>MariaDB</li>
+            <li>SQLite</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="section reveal" id="formacion" aria-labelledby="education-title">
+        <div class="wrap narrow center">
+          <p class="kicker">Formación</p>
+          <h2 id="education-title">Base académica.</h2>
+          <article class="card edu-card">
+            <h3>
+              <a href="https://uees.edu.ec/grado/ingenieria/computacion/" target="_blank" rel="noreferrer">
+                Universidad Espíritu Santo (UEES)
+              </a>
+            </h3>
+            <p class="edu-degree">Ingeniería en Computación</p>
+            <p class="muted">
+              Aquí estoy construyendo mi base como ingeniero. Combino lo que aprendo en clase con
+              proyectos reales para crecer en desarrollo web, bases de datos, backend y sistemas
+              distribuidos, siempre con la misma meta: aprender a desarrollar buen software.
+            </p>
+            <a class="btn btn--ghost edu-link" href="https://uees.edu.ec/grado/ingenieria/computacion/" target="_blank" rel="noreferrer">
+              Ver programa en UEES
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section class="section reveal" id="certificaciones" aria-labelledby="cert-title">
+        <div class="wrap narrow center">
+          <p class="kicker">Certificación</p>
+          <h2 id="cert-title">Credencial verificada.</h2>
+          <article class="card cert-card">
+            <img
+              class="cert-badge"
+              src="img/aws-badge.png"
+              alt="Insignia AWS Academy Graduate — Data Engineering"
+              loading="lazy"
+            >
+            <div class="cert-meta">
+              <h3>AWS Academy Graduate — Data Engineering</h3>
+              <p class="muted">AWS Academy · 2026</p>
+              <div class="cert-actions">
+                <a
+                  class="btn btn--solid"
+                  href="https://www.credly.com/badges/d2ea39f5-5790-429f-87a0-581896b690d8/public_url"
+                  target="_blank"
+                  rel="noreferrer"
+                >Ver credencial</a>
+                <a
+                  class="btn btn--ghost"
+                  href="certificado-aws.html"
+                >Ver certificado</a>
+                <a
+                  class="btn btn--ghost"
+                  href="docs/CertificadoAWS-Karel-Gonzalez.pdf"
+                  download="CertificadoAWS-Karel-Gonzalez.pdf"
+                  data-download
+                >Descargar certificado</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section reveal" id="proyectos" aria-labelledby="projects-title">
+        <div class="wrap center">
+          <p class="kicker">Proyectos</p>
+          <h2 id="projects-title">Trabajo académico y técnico seleccionado.</h2>
+          <p class="lead lead--wide">
+            Proyectos que muestran bases de datos, lógica backend, interfaces web, reglas declarativas
+            y sistemas distribuidos.
+          </p>
+
+          <div class="projects">
+            <article class="card project">
+              <a class="project__media" href="https://github.com/juandifrost17/proyecto_bd2_enreach" target="_blank" rel="noreferrer">
+                <img
+                  src="img/enreach.png"
+                  alt="Vista del sistema Enreach"
+                  loading="lazy"
+                >
+              </a>
+              <div class="project__body">
+                <p class="project__label">Data Warehouse &amp; Business Intelligence</p>
+                <h3>Enreach</h3>
+                <p class="muted">
+                  Data Warehouse y dashboard BI para analítica de telecomunicaciones. Trabajé en la vista
+                  Enreach: indicadores ejecutivos, consultas analíticas y presentación del dashboard.
+                </p>
+                <ul class="stack">
+                  <li>PostgreSQL</li>
+                  <li>Pentaho Spoon</li>
+                  <li>Spring Boot</li>
+                  <li>React</li>
+                  <li>Recharts</li>
+                </ul>
+                <div class="project__links">
+                  <a href="https://github.com/juandifrost17/proyecto_bd2_enreach" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project">
+              <a class="project__media" href="https://github.com/karelgonzalezruiz/proyecto-refugio-de-campeones" target="_blank" rel="noreferrer">
+                <img
+                  src="img/refugio.png"
+                  alt="Portada de Refugio de los Campeones"
+                  loading="lazy"
+                >
+              </a>
+              <div class="project__body">
+                <p class="project__label">RPG táctico con motor de reglas en Prolog</p>
+                <h3>Refugio de los Campeones</h3>
+                <p class="muted">
+                  RPG táctico que integra Laravel con un motor de reglas en Prolog. La capa web organiza la
+                  presentación y Prolog resuelve la lógica del juego mediante reglas declarativas.
+                </p>
+                <ul class="stack">
+                  <li>PHP</li>
+                  <li>Laravel</li>
+                  <li>SWI-Prolog</li>
+                  <li>Blade</li>
+                  <li>SQLite</li>
+                </ul>
+                <div class="project__links">
+                  <a href="https://github.com/karelgonzalezruiz/proyecto-refugio-de-campeones" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project">
+              <a class="project__media" href="https://github.com/karelgonzalezruiz/proyecto-iceframe-app-inventario" target="_blank" rel="noreferrer">
+                <img
+                  src="img/iceframe.png"
+                  alt="Dashboard de IceFrame Inventory"
+                  loading="lazy"
+                >
+              </a>
+              <div class="project__body">
+                <p class="project__label">Sistema distribuido de inventario</p>
+                <h3>IceFrame Inventory</h3>
+                <p class="muted">
+                  Sistema distribuido de inventario con Laravel y Docker. Desarrollé la gestión de productos,
+                  operaciones de stock, historial de movimientos e integración con servicios remotos.
+                </p>
+                <ul class="stack">
+                  <li>PHP</li>
+                  <li>Laravel</li>
+                  <li>PostgreSQL</li>
+                  <li>Docker</li>
+                  <li>Tailscale</li>
+                </ul>
+                <div class="project__links">
+                  <a href="https://github.com/karelgonzalezruiz/proyecto-iceframe-app-inventario" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project">
+              <a class="project__media" href="https://github.com/jdsotomayorjimenez/proyecto-ldp-huellitas" target="_blank" rel="noreferrer">
+                <img src="img/huellitas.png" alt="Landing page de Huellitas" loading="lazy">
+              </a>
+              <div class="project__body">
+                <p class="project__label">Sistema de gestión de adopciones</p>
+                <h3>Huellitas</h3>
+                <p class="muted">
+                  Plataforma Laravel para formalizar el flujo completo de adopción. Trabajé en interfaz,
+                  controladores, validaciones y lógica de negocio basada en estados.
+                </p>
+                <ul class="stack">
+                  <li>PHP</li>
+                  <li>Laravel</li>
+                  <li>MariaDB</li>
+                  <li>Blade</li>
+                  <li>Bootstrap 5</li>
+                </ul>
+                <div class="project__links">
+                  <a href="https://github.com/jdsotomayorjimenez/proyecto-ldp-huellitas" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="actions actions--center catalog-cta">
+            <a class="btn btn--ghost" href="catalogo.html">Ver catálogo por materia &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESUME -->
+      <section class="section reveal" id="cv" aria-labelledby="resume-title">
+        <div class="wrap narrow center">
+          <p class="kicker">CV</p>
+          <h2 id="resume-title">Resumen académico y técnico.</h2>
+          <p class="lead">
+            Educación, habilidades técnicas, proyectos seleccionados y perfil académico en un documento descargable.
+          </p>
+          <div class="actions actions--center">
+            <a class="btn btn--solid" href="cv.html">Ver CV</a>
+            <a class="btn btn--ghost" href="docs/CV-Karel-Gonzalez.pdf" download="CV-Karel-Gonzalez.pdf" data-download>Descargar PDF</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner center">
+        <p class="footer-name">Karel González</p>
+        <nav class="footer-nav" aria-label="Enlaces del pie de página">
+          <a href="https://github.com/karelgonzalezruiz" target="_blank" rel="noreferrer">GitHub</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=karelg2006@gmail.com&su=Contacto%20desde%20portafolio" target="_blank" rel="noreferrer">Correo</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://www.instagram.com/karel_lgr" target="_blank" rel="noreferrer">Instagram</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/main.js?v=20260621"></script>
+  </body>
+</html>

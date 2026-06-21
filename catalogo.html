@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Catálogo de proyectos de Karel González organizados por materia: Base de Datos II, Sistemas Distribuidos y Lenguajes de Programación."
+    >
+    <title>Catálogo — Karel González</title>
+
+    <link rel="canonical" href="https://karelgonzalezruiz.github.io/catalogo.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Catálogo de proyectos — Karel González">
+    <meta
+      property="og:description"
+      content="Proyectos organizados por materia: Base de Datos II, Sistemas Distribuidos y Lenguajes de Programación."
+    >
+    <meta property="og:url" content="https://karelgonzalezruiz.github.io/catalogo.html">
+    <meta property="og:image" content="https://karelgonzalezruiz.github.io/img/logo-light.png">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="icon" type="image/png" href="img/logo-light.png">
+    <link rel="stylesheet" href="css/styles.css?v=20260621">
+  </head>
+  <body>
+    <script>
+      // Aplica el tema guardado antes de pintar para evitar el parpadeo (FOUC).
+      (function () {
+        var t = localStorage.getItem("theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        if (t === "dark") document.body.classList.add("dark-mode");
+      })();
+    </script>
+
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="site-logo" href="index.html" aria-label="Karel González — volver al portafolio">
+          <img class="logo-img logo-img--light" src="img/logo-light.png" alt="Avatar de Karel González" width="46" height="46">
+          <img class="logo-img logo-img--dark" src="img/logo-dark.png" alt="" width="46" height="46" aria-hidden="true">
+        </a>
+        <button class="theme-toggle" type="button" aria-label="Cambiar tema" aria-pressed="false">
+          <span class="theme-toggle__icon" aria-hidden="true"></span>
+          <span class="theme-toggle__text">Modo oscuro</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- INTRO -->
+      <section class="section reveal" aria-labelledby="catalog-title">
+        <div class="wrap narrow center">
+          <p class="kicker">Catálogo</p>
+          <h1 id="catalog-title" class="page-title">Proyectos por materia.</h1>
+          <p class="lead">
+            Los mismos proyectos del portafolio, agrupados según la materia académica a la que
+            pertenecen. Elige una materia para ver su trabajo.
+          </p>
+        </div>
+      </section>
+
+      <!-- SUBJECT CARDS -->
+      <section class="section reveal" aria-label="Materias">
+        <div class="wrap center">
+          <div class="subjects">
+            <a class="card subject-card" href="materia-base-de-datos.html">
+              <span class="subject-card__count">1 proyecto</span>
+              <h3>Base de Datos II</h3>
+              <p class="muted">Modelado de datos, data warehouse y analítica de negocio.</p>
+              <span class="subject-card__go">Ver proyecto &rarr;</span>
+            </a>
+
+            <a class="card subject-card" href="materia-sistemas-distribuidos.html">
+              <span class="subject-card__count">1 proyecto</span>
+              <h3>Sistemas Distribuidos</h3>
+              <p class="muted">Servicios desplegados, contenedores y comunicación entre nodos.</p>
+              <span class="subject-card__go">Ver proyecto &rarr;</span>
+            </a>
+
+            <a class="card subject-card" href="materia-lenguajes.html">
+              <span class="subject-card__count">2 proyectos</span>
+              <h3>Lenguajes de Programación</h3>
+              <p class="muted">Paradigmas, lógica declarativa y aplicaciones web.</p>
+              <span class="subject-card__go">Ver proyectos &rarr;</span>
+            </a>
+          </div>
+
+          <div class="actions actions--center catalog-cta">
+            <a class="btn btn--ghost" href="index.html#proyectos">&larr; Volver al portafolio</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner center">
+        <p class="footer-name">Karel González</p>
+        <nav class="footer-nav" aria-label="Enlaces del pie de página">
+          <a href="index.html">Portafolio</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://github.com/karelgonzalezruiz" target="_blank" rel="noreferrer">GitHub</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://www.instagram.com/karel_lgr" target="_blank" rel="noreferrer">Instagram</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/main.js?v=20260621"></script>
+  </body>
+</html>

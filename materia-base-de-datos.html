@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Base de Datos II — proyectos de modelado de datos, data warehouse y analítica de negocio de Karel González."
+    >
+    <title>Base de Datos II — Catálogo · Karel González</title>
+
+    <link rel="canonical" href="https://karelgonzalezruiz.github.io/materia-base-de-datos.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Base de Datos II — Karel González">
+    <meta property="og:description" content="Modelado de datos, data warehouse y analítica de negocio.">
+    <meta property="og:url" content="https://karelgonzalezruiz.github.io/materia-base-de-datos.html">
+    <meta property="og:image" content="https://karelgonzalezruiz.github.io/img/logo-light.png">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="icon" type="image/png" href="img/logo-light.png">
+    <link rel="stylesheet" href="css/styles.css?v=20260621">
+  </head>
+  <body>
+    <script>
+      // Aplica el tema guardado antes de pintar para evitar el parpadeo (FOUC).
+      (function () {
+        var t = localStorage.getItem("theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        if (t === "dark") document.body.classList.add("dark-mode");
+      })();
+    </script>
+
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="site-logo" href="index.html" aria-label="Karel González — volver al portafolio">
+          <img class="logo-img logo-img--light" src="img/logo-light.png" alt="Avatar de Karel González" width="46" height="46">
+          <img class="logo-img logo-img--dark" src="img/logo-dark.png" alt="" width="46" height="46" aria-hidden="true">
+        </a>
+        <button class="theme-toggle" type="button" aria-label="Cambiar tema" aria-pressed="false">
+          <span class="theme-toggle__icon" aria-hidden="true"></span>
+          <span class="theme-toggle__text">Modo oscuro</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- INTRO -->
+      <section class="section reveal" aria-labelledby="materia-title">
+        <div class="wrap narrow center">
+          <p class="kicker">Materia</p>
+          <h1 id="materia-title" class="page-title">Base de Datos&nbsp;II</h1>
+          <p class="lead">
+            Modelado de datos, data warehouse y analítica de negocio.
+          </p>
+        </div>
+      </section>
+
+      <!-- PROYECTOS -->
+      <section class="section reveal" aria-label="Proyectos de Base de Datos II">
+        <div class="wrap">
+          <div class="projects projects--single">
+            <article class="card project">
+              <a class="project__media" href="https://github.com/juandifrost17/proyecto_bd2_enreach" target="_blank" rel="noreferrer">
+                <img src="img/enreach.png" alt="Vista del sistema Enreach" loading="lazy">
+              </a>
+              <div class="project__body">
+                <p class="project__label">Data Warehouse &amp; Business Intelligence</p>
+                <h3>Enreach</h3>
+                <p class="muted">
+                  Data Warehouse y dashboard BI para analítica de telecomunicaciones. Trabajé en la vista
+                  Enreach: indicadores ejecutivos, consultas analíticas y presentación del dashboard.
+                </p>
+                <ul class="stack">
+                  <li>PostgreSQL</li>
+                  <li>Pentaho Spoon</li>
+                  <li>Spring Boot</li>
+                  <li>React</li>
+                  <li>Recharts</li>
+                </ul>
+                <div class="project__links">
+                  <a href="https://github.com/juandifrost17/proyecto_bd2_enreach" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="actions actions--center catalog-cta">
+            <a class="btn btn--ghost" href="catalogo.html">&larr; Volver al catálogo</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner center">
+        <p class="footer-name">Karel González</p>
+        <nav class="footer-nav" aria-label="Enlaces del pie de página">
+          <a href="catalogo.html">Catálogo</a>
+          <span aria-hidden="true">·</span>
+          <a href="index.html">Portafolio</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://github.com/karelgonzalezruiz" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/main.js?v=20260621"></script>
+  </body>
+</html>

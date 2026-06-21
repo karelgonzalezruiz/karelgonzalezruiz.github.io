@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Sistemas Distribuidos — proyectos con servicios desplegados, contenedores y comunicación entre nodos de Karel González."
+    >
+    <title>Sistemas Distribuidos — Catálogo · Karel González</title>
+
+    <link rel="canonical" href="https://karelgonzalezruiz.github.io/materia-sistemas-distribuidos.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sistemas Distribuidos — Karel González">
+    <meta property="og:description" content="Servicios desplegados, contenedores y comunicación entre nodos.">
+    <meta property="og:url" content="https://karelgonzalezruiz.github.io/materia-sistemas-distribuidos.html">
+    <meta property="og:image" content="https://karelgonzalezruiz.github.io/img/logo-light.png">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="icon" type="image/png" href="img/logo-light.png">
+    <link rel="stylesheet" href="css/styles.css?v=20260621">
+  </head>
+  <body>
+    <script>
+      // Aplica el tema guardado antes de pintar para evitar el parpadeo (FOUC).
+      (function () {
+        var t = localStorage.getItem("theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        if (t === "dark") document.body.classList.add("dark-mode");
+      })();
+    </script>
+
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="site-logo" href="index.html" aria-label="Karel González — volver al portafolio">
+          <img class="logo-img logo-img--light" src="img/logo-light.png" alt="Avatar de Karel González" width="46" height="46">
+          <img class="logo-img logo-img--dark" src="img/logo-dark.png" alt="" width="46" height="46" aria-hidden="true">
+        </a>
+        <button class="theme-toggle" type="button" aria-label="Cambiar tema" aria-pressed="false">
+          <span class="theme-toggle__icon" aria-hidden="true"></span>
+          <span class="theme-toggle__text">Modo oscuro</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- INTRO -->
+      <section class="section reveal" aria-labelledby="materia-title">
+        <div class="wrap narrow center">
+          <p class="kicker">Materia</p>
+          <h1 id="materia-title" class="page-title">Sistemas Distribuidos</h1>
+          <p class="lead">
+            Servicios desplegados, contenedores y comunicación entre nodos.
+          </p>
+        </div>
+      </section>
+
+      <!-- PROYECTOS -->
+      <section class="section reveal" aria-label="Proyectos de Sistemas Distribuidos">
+        <div class="wrap">
+          <div class="projects projects--single">
+            <article class="card project">
+              <a class="project__media" href="https://github.com/karelgonzalezruiz/proyecto-iceframe-app-inventario" target="_blank" rel="noreferrer">
+                <img src="img/iceframe.png" alt="Dashboard de IceFrame Inventory" loading="lazy">
+              </a>
+              <div class="project__body">
+                <p class="project__label">Sistema distribuido de inventario</p>
+                <h3>IceFrame Inventory</h3>
+                <p class="muted">
+                  Sistema distribuido de inventario con Laravel y Docker. Desarrollé la gestión de productos,
+                  operaciones de stock, historial de movimientos e integración con servicios remotos.
+                </p>
+                <ul class="stack">
+                  <li>PHP</li>
+                  <li>Laravel</li>
+                  <li>PostgreSQL</li>
+                  <li>Docker</li>
+                  <li>Tailscale</li>
+                </ul>
+                <div class="project__links">
+                  <a href="https://github.com/karelgonzalezruiz/proyecto-iceframe-app-inventario" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="actions actions--center catalog-cta">
+            <a class="btn btn--ghost" href="catalogo.html">&larr; Volver al catálogo</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner center">
+        <p class="footer-name">Karel González</p>
+        <nav class="footer-nav" aria-label="Enlaces del pie de página">
+          <a href="catalogo.html">Catálogo</a>
+          <span aria-hidden="true">·</span>
+          <a href="index.html">Portafolio</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://github.com/karelgonzalezruiz" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/main.js?v=20260621"></script>
+  </body>
+</html>

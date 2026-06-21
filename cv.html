@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV-Karel-Gonzalez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <style>
+      :root {
+        --ink: #1b1d1c;
+        --muted: #5b6470;
+        --accent: #0d9488;
+        --line: #e2e5e1;
+        --font-body: "Inter", system-ui, sans-serif;
+        --font-head: "Space Grotesk", var(--font-body);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        background: #eef0ec;
+        color: var(--ink);
+        font-family: var(--font-body);
+        font-size: 10.4pt;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .toolbar {
+        display: flex;
+        justify-content: center;
+        gap: 0.6rem;
+        padding: 1rem;
+      }
+
+      .toolbar .toolbar-primary {
+        font-family: var(--font-head);
+        font-weight: 600;
+        font-size: 0.9rem;
+        padding: 0.6rem 1.3rem;
+        border-radius: 999px;
+        border: 1px solid var(--accent);
+        background: var(--accent);
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .toolbar a {
+        font-family: var(--font-head);
+        font-weight: 600;
+        font-size: 0.9rem;
+        padding: 0.6rem 1.3rem;
+        border-radius: 999px;
+        border: 1px solid #c9cdc7;
+        background: #fff;
+        color: var(--ink);
+        text-decoration: none;
+      }
+
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto 2rem;
+        padding: 18mm 18mm;
+        background: #fff;
+        box-shadow: 0 18px 50px rgba(20, 30, 28, 0.12);
+      }
+
+      header.cv-head {
+        text-align: center;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid var(--ink);
+      }
+
+      .cv-name {
+        font-family: var(--font-head);
+        font-size: 25pt;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        margin: 0;
+      }
+
+      .cv-role {
+        font-family: var(--font-head);
+        color: var(--accent);
+        font-weight: 600;
+        font-size: 11.5pt;
+        margin: 0.25rem 0 0.5rem;
+      }
+
+      .cv-contact {
+        color: var(--muted);
+        font-size: 9.6pt;
+        margin: 0;
+      }
+
+      .cv-contact a { color: var(--muted); text-decoration: none; }
+
+      section.block { margin-top: 1.15rem; }
+
+      h2.block-title {
+        font-family: var(--font-head);
+        font-size: 10.5pt;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 0 0 0.6rem;
+        padding-bottom: 0.25rem;
+        border-bottom: 1px solid var(--line);
+      }
+
+      p { margin: 0; }
+      .muted { color: var(--muted); }
+
+      .entry { margin-bottom: 0.7rem; }
+      .entry:last-child { margin-bottom: 0; }
+
+      .entry-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 1rem;
+      }
+
+      .entry-title { font-family: var(--font-head); font-weight: 600; font-size: 10.8pt; }
+      .entry-meta { color: var(--muted); font-size: 9.4pt; white-space: nowrap; }
+      .entry-sub { color: var(--accent); font-size: 9.6pt; font-weight: 500; margin-bottom: 0.15rem; }
+      .entry-desc { color: var(--muted); font-size: 9.8pt; }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.4rem 1.6rem;
+      }
+
+      .skills-grid div { font-size: 9.9pt; }
+      .skills-grid b { font-family: var(--font-head); font-weight: 600; color: var(--ink); }
+
+      .langs { display: flex; gap: 2rem; font-size: 9.9pt; }
+      .langs b { font-family: var(--font-head); font-weight: 600; }
+
+      @media print {
+        body { background: #fff; }
+        .toolbar { display: none; }
+        .page { width: auto; min-height: auto; margin: 0; padding: 0; box-shadow: none; }
+        @page { size: A4; margin: 14mm; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toolbar" role="navigation" aria-label="Acciones del CV">
+      <a href="index.html#cv">← Volver al portafolio</a>
+      <a
+        class="toolbar-primary"
+        href="docs/CV-Karel-Gonzalez.pdf"
+        download="CV-Karel-Gonzalez.pdf"
+      >Descargar / Imprimir PDF</a>
+    </div>
+
+    <div class="page">
+      <header class="cv-head">
+        <h1 class="cv-name">Karel González</h1>
+        <p class="cv-role">Estudiante de Desarrollo de Software</p>
+        <p class="cv-contact">
+          Aplicaciones web · Bases de datos · Sistemas backend &nbsp;|&nbsp;
+          <a href="mailto:karelg2006@gmail.com">karelg2006@gmail.com</a> &nbsp;·&nbsp;
+          <a href="https://github.com/karelgonzalezruiz">github.com/karelgonzalezruiz</a> &nbsp;·&nbsp;
+          Ecuador
+        </p>
+      </header>
+
+      <section class="block">
+        <h2 class="block-title">Perfil</h2>
+        <p class="muted">
+          Desarrollador de software enfocado en construir aplicaciones web prácticas, sistemas basados en
+          datos y lógica backend organizada. Soy perfeccionista y me encanta entregar siempre el mejor
+          trabajo posible, cuidando cada detalle: interfaces limpias, código ordenado y documentación clara.
+        </p>
+      </section>
+
+      <section class="block">
+        <h2 class="block-title">Formación</h2>
+        <div class="entry">
+          <div class="entry-head">
+            <span class="entry-title">Universidad Espíritu Santo (UEES)</span>
+            <span class="entry-meta">Ecuador</span>
+          </div>
+          <p class="entry-sub">Ingeniería en Computación</p>
+          <p class="entry-desc">
+            En formación para desarrollar buen software, combinando lo aprendido en clase con proyectos
+            reales en desarrollo web, bases de datos, backend y sistemas distribuidos.
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2 class="block-title">Proyectos Seleccionados</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <span class="entry-title">Enreach — Data Warehouse y Business Intelligence</span>
+          </div>
+          <p class="entry-desc">
+            Data Warehouse y dashboard BI para analítica de telecomunicaciones. Desarrollé la vista
+            Enreach con indicadores ejecutivos, consultas analíticas y presentación del dashboard.
+            <em>PostgreSQL · Pentaho Spoon · Spring Boot · React · Recharts</em>
+          </p>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <span class="entry-title">Refugio de los Campeones — RPG táctico con motor de reglas en Prolog</span>
+          </div>
+          <p class="entry-desc">
+            RPG táctico que integra Laravel con un motor de reglas en Prolog; la capa web organiza la
+            presentación mientras Prolog resuelve la lógica del juego con reglas declarativas.
+            <em>PHP · Laravel · Prolog · SQLite</em>
+          </p>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <span class="entry-title">IceFrame Inventory — Sistema distribuido de inventario</span>
+          </div>
+          <p class="entry-desc">
+            Sistema distribuido de inventario con Laravel y Docker. Desarrollé la gestión de productos,
+            operaciones de stock, historial de movimientos e integración con servicios remotos.
+            <em>PHP · Laravel · PostgreSQL · Docker</em>
+          </p>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <span class="entry-title">Huellitas — Sistema de gestión de adopciones</span>
+          </div>
+          <p class="entry-desc">
+            Plataforma Laravel que formaliza el flujo completo de adopción. Trabajé en la interfaz,
+            controladores, validaciones y lógica de negocio basada en estados.
+            <em>PHP · Laravel · MariaDB</em>
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2 class="block-title">Habilidades Técnicas</h2>
+        <div class="skills-grid">
+          <div><b>Backend:</b> Java, Spring Boot, PHP, Laravel, Prolog</div>
+          <div><b>Bases de datos:</b> PostgreSQL, MariaDB, SQLite</div>
+          <div><b>Web:</b> JavaScript, React</div>
+          <div><b>Herramientas:</b> Docker</div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2 class="block-title">Certificación</h2>
+        <div class="entry">
+          <div class="entry-head">
+            <span class="entry-title">AWS Academy Graduate — Data Engineering</span>
+            <span class="entry-meta">AWS Academy · 2026</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2 class="block-title">Idiomas</h2>
+        <div class="langs">
+          <span><b>Español</b> — Nativo</span>
+          <span><b>Inglés</b> — Competencia profesional</span>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

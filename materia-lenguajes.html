@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Lenguajes de Programación — proyectos sobre paradigmas, lógica declarativa y aplicaciones web de Karel González."
+    >
+    <title>Lenguajes de Programación — Catálogo · Karel González</title>
+
+    <link rel="canonical" href="https://karelgonzalezruiz.github.io/materia-lenguajes.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Lenguajes de Programación — Karel González">
+    <meta property="og:description" content="Paradigmas, lógica declarativa y aplicaciones web.">
+    <meta property="og:url" content="https://karelgonzalezruiz.github.io/materia-lenguajes.html">
+    <meta property="og:image" content="https://karelgonzalezruiz.github.io/img/logo-light.png">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="icon" type="image/png" href="img/logo-light.png">
+    <link rel="stylesheet" href="css/styles.css?v=20260621">
+  </head>
+  <body>
+    <script>
+      // Aplica el tema guardado antes de pintar para evitar el parpadeo (FOUC).
+      (function () {
+        var t = localStorage.getItem("theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        if (t === "dark") document.body.classList.add("dark-mode");
+      })();
+    </script>
+
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="site-logo" href="index.html" aria-label="Karel González — volver al portafolio">
+          <img class="logo-img logo-img--light" src="img/logo-light.png" alt="Avatar de Karel González" width="46" height="46">
+          <img class="logo-img logo-img--dark" src="img/logo-dark.png" alt="" width="46" height="46" aria-hidden="true">
+        </a>
+        <button class="theme-toggle" type="button" aria-label="Cambiar tema" aria-pressed="false">
+          <span class="theme-toggle__icon" aria-hidden="true"></span>
+          <span class="theme-toggle__text">Modo oscuro</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- INTRO -->
+      <section class="section reveal" aria-labelledby="materia-title">
+        <div class="wrap narrow center">
+          <p class="kicker">Materia</p>
+          <h1 id="materia-title" class="page-title">Lenguajes de Programación</h1>
+          <p class="lead">
+            Paradigmas, lógica declarativa y aplicaciones web.
+          </p>
+        </div>
+      </section>
+
+      <!-- PROYECTOS -->
+      <section class="section reveal" aria-label="Proyectos de Lenguajes de Programación">
+        <div class="wrap">
+          <div class="projects">
+            <article class="card project">
+              <a class="project__media" href="https://github.com/karelgonzalezruiz/proyecto-refugio-de-campeones" target="_blank" rel="noreferrer">
+                <img src="img/refugio.png" alt="Portada de Refugio de los Campeones" loading="lazy">
+              </a>
+              <div class="project__body">
+                <p class="project__label">RPG táctico con motor de reglas en Prolog</p>
+                <h3>Refugio de los Campeones</h3>
+                <p class="muted">
+                  RPG táctico que integra Laravel con un motor de reglas en Prolog. La capa web organiza la
+                  presentación y Prolog resuelve la lógica del juego mediante reglas declarativas.
+                </p>
+                <ul class="stack">
+                  <li>PHP</li>
+                  <li>Laravel</li>
+                  <li>SWI-Prolog</li>
+                  <li>Blade</li>
+                  <li>SQLite</li>
+                </ul>
+                <div class="project__links">
+                  <a href="https://github.com/karelgonzalezruiz/proyecto-refugio-de-campeones" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project">
+              <a class="project__media" href="https://github.com/jdsotomayorjimenez/proyecto-ldp-huellitas" target="_blank" rel="noreferrer">
+                <img src="img/huellitas.png" alt="Landing page de Huellitas" loading="lazy">
+              </a>
+              <div class="project__body">
+                <p class="project__label">Sistema de gestión de adopciones</p>
+                <h3>Huellitas</h3>
+                <p class="muted">
+                  Plataforma Laravel para formalizar el flujo completo de adopción. Trabajé en interfaz,
+                  controladores, validaciones y lógica de negocio basada en estados.
+                </p>
+                <ul class="stack">
+                  <li>PHP</li>
+                  <li>Laravel</li>
+                  <li>MariaDB</li>
+                  <li>Blade</li>
+                  <li>Bootstrap 5</li>
+                </ul>
+                <div class="project__links">
+                  <a href="https://github.com/jdsotomayorjimenez/proyecto-ldp-huellitas" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="actions actions--center catalog-cta">
+            <a class="btn btn--ghost" href="catalogo.html">&larr; Volver al catálogo</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner center">
+        <p class="footer-name">Karel González</p>
+        <nav class="footer-nav" aria-label="Enlaces del pie de página">
+          <a href="catalogo.html">Catálogo</a>
+          <span aria-hidden="true">·</span>
+          <a href="index.html">Portafolio</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://github.com/karelgonzalezruiz" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/main.js?v=20260621"></script>
+  </body>
+</html>
