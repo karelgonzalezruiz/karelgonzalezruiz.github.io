@@ -18,6 +18,7 @@
   --radius: 14px;
   --maxw: 1080px;
   --narrow: 720px;
+  --card-w: 480px;
   --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-head: "Space Grotesk", var(--font-body);
 }
@@ -378,16 +379,21 @@ body.dark-mode .logo-img--dark { display: block; }
 
 /* ---------- Projects ---------- */
 .projects {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
   margin-top: 3rem;
   text-align: left;
 }
 
+/* Todas las tarjetas de proyecto miden lo mismo en cualquier página. */
 .project {
   display: flex;
   flex-direction: column;
+  flex: 0 1 var(--card-w);
+  width: var(--card-w);
+  max-width: 100%;
   overflow: hidden;
   transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
 }
@@ -527,9 +533,8 @@ body.dark-mode .logo-img--dark { display: block; }
   color: var(--accent);
 }
 
-/* Una sola tarjeta de proyecto: centrada y con ancho contenido */
+/* Una sola tarjeta de proyecto: mismo tamaño que las demás y centrada. */
 .projects--single {
-  grid-template-columns: minmax(0, 520px);
   justify-content: center;
 }
 
@@ -563,7 +568,6 @@ body.dark-mode .logo-img--dark { display: block; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 768px) {
-  .projects { grid-template-columns: 1fr; }
   .cert-card { flex-direction: column; text-align: center; }
   .cert-actions { max-width: 100%; }
   .hero { min-height: auto; }

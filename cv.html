@@ -160,8 +160,10 @@
       <a href="index.html#cv">← Volver al portafolio</a>
       <a
         class="toolbar-primary"
+        id="btn-imprimir"
         href="docs/CV-Karel-Gonzalez.pdf"
-        download="CV-Karel-Gonzalez.pdf"
+        target="_blank"
+        rel="noopener"
       >Descargar / Imprimir PDF</a>
     </div>
 
@@ -277,5 +279,28 @@
         </div>
       </section>
     </div>
+
+    <script>
+      // "Descargar / Imprimir PDF": abre el PDF en una pestaña nueva y lanza
+      // el diálogo de impresión del navegador. El botón "Descargar" solo descarga.
+      (function () {
+        var pdf = "docs/CV-Karel-Gonzalez.pdf";
+        var btn = document.getElementById("btn-imprimir");
+        if (!btn) return;
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+          var w = window.open(pdf, "_blank");
+          if (!w) { window.location.href = pdf; return; }
+          var lanzado = false;
+          function imprimir() {
+            if (lanzado) return;
+            lanzado = true;
+            try { w.focus(); w.print(); } catch (err) {}
+          }
+          w.addEventListener("load", imprimir);
+          setTimeout(imprimir, 1500);
+        });
+      })();
+    </script>
   </body>
 </html>
